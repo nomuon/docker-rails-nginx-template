@@ -1,24 +1,19 @@
-# README
+# Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Docker: 3
+- Nginx: 1.15.10
+- Ruby: 2.6
+    - Ruby on Rails: 5.2.3
 
-Things you may want to cover:
+# Usage
 
-* Ruby version
+## docker-compose build
+```
+$ docker-compose build
+$ docker-compose up
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## create database
+```
+$ docker-compose run --rm app rake db:create
+```
